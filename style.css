@@ -38,9 +38,36 @@ header a:hover {
 main {
   background-color: violet;
   flex: 1 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
   height: 10vh;
   background-color: blueviolet;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 290px);
+  grid-template-rows: repeat(2, 280px);
+  gap: 40px;
+}
+
+.grid-item-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.grid-item-6 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.grid-color {
+  background-color: azure;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
